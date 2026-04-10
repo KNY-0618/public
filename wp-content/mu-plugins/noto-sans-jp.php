@@ -36,7 +36,7 @@ function jqs_enqueue_noto_sans_jp() {
 	// Footer 3-column row tweak: make the privacy-mark column slimmer and centered.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'@media (min-width: 1025px) { .ct-footer .wp-block-columns.is-layout-flex:has(> .wp-block-column:nth-child(3)) { display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr); column-gap: 24px; align-items: center; } .ct-footer .wp-block-columns.is-layout-flex:has(> .wp-block-column:nth-child(3)) > .wp-block-column { margin: 0 !important; } .ct-footer .wp-block-columns.is-layout-flex:has(> .wp-block-column:nth-child(3)) > .wp-block-column:first-child { justify-self: center; text-align: center; } .ct-footer .wp-block-columns.is-layout-flex:has(> .wp-block-column:nth-child(3)) > .wp-block-column:first-child img { width: min(140px, 100%); height: auto; } }'
+		'@media (min-width: 1000px) { [data-footer*="type-1"] .ct-footer [data-row*="top"] > div { grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr) !important; column-gap: 24px !important; align-items: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] { justify-content: center !important; align-items: center !important; text-align: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] img { width: min(140px, 100%) !important; height: auto !important; margin-inline: auto !important; } }'
 	);
 }
 add_action('wp_enqueue_scripts', 'jqs_enqueue_noto_sans_jp', 20);
