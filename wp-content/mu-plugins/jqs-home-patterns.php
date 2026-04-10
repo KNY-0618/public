@@ -32,16 +32,16 @@ function jqs_register_home_patterns() {
 <div class="wp-block-group alignfull has-white-background-color has-background">
 <!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center">
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:column {"verticalAlignment":"center","width":"28%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:28%">
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $image_url . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:column {"verticalAlignment":"center","width":"72%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:72%">
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">より速く・より正確に・より安全に</h3>
 <!-- /wp:heading -->
@@ -49,14 +49,6 @@ function jqs_register_home_patterns() {
 <!-- wp:paragraph -->
 <p>桃太郎のおとぎ話は、どなたでもご存じです。<br>犬（勇敢、敏速）猿（知恵と計画性）雉（空を飛んで情報収集と慎重性）これらをまとめてシステム化するコーディネーターとしての桃太郎の役割・・・。そして宝物を運ぶ訳であります。<br>このような桃太郎のおとぎ話にあてはめ、「より速く、より正確に、より安全に」をモットーとしたのが「桃太郎便」であります。</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Amazon配送のお問い合わせ・再配達のご依頼・お荷物の追跡はコチラ</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
 </div>
 <!-- /wp:column -->
 </div>
