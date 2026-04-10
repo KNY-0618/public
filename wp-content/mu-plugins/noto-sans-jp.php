@@ -36,13 +36,19 @@ function jqs_enqueue_noto_sans_jp() {
 	// Footer 3-column row tweak: size columns by content to reduce unnecessary gaps.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'@media (min-width: 1000px) { [data-footer*="type-1"] .ct-footer [data-row*="top"] > div { grid-template-columns: auto auto minmax(0, 1fr) !important; column-gap: 12px !important; align-items: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] { justify-content: center !important; align-items: center !important; text-align: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] img { width: min(105px, 100%) !important; height: auto !important; margin-inline: auto !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] { font-size: 12px !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] :is(p, li, a, span, div) { font-size: 12px !important; line-height: 1.6 !important; } }'
+		'@media (min-width: 1000px) { [data-footer*="type-1"] .ct-footer [data-row*="top"] > div { grid-template-columns: auto auto minmax(0, 1fr) !important; column-gap: 12px !important; align-items: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] { justify-content: center !important; align-items: center !important; text-align: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] img { width: min(105px, 100%) !important; height: auto !important; margin-inline: auto !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] { font-size: 12px !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] :is(p, li, a, span, div) { font-size: 14px !important; line-height: 1.6 !important; } }'
 	);
 
 	// Remove background colors only inside the footer top widget area.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
 		'[data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .has-background, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .wp-block-group, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] [style*="background"] { background: transparent !important; }'
+	);
+
+	// Header tweak: middle row horizontal padding + hide top/bottom rows temporarily.
+	wp_add_inline_style(
+		'jqs-noto-sans-jp-global',
+		'.ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"], .ct-header [data-row*="bottom"] { display: none !important; }'
 	);
 }
 add_action('wp_enqueue_scripts', 'jqs_enqueue_noto_sans_jp', 20);
