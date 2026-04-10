@@ -28,9 +28,9 @@ function jqs_register_home_patterns() {
 	$image_url = esc_url(home_url('/wp-content/uploads/2026/04/momotarou_top_img.png'));
 
 	$pattern_content = '
-<!-- wp:group {"align":"full","layout":{"type":"constrained","contentSize":"1280px"}} -->
-<div class="wp-block-group alignfull">
-<!-- wp:columns {"verticalAlignment":"center"} -->
+<!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background">
+<!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center">
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center">
@@ -42,8 +42,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">より速く・より正確に・より安全に</h2>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">より速く・より正確に・より安全に</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
