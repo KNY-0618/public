@@ -33,10 +33,10 @@ function jqs_enqueue_noto_sans_jp() {
 		'body, body * { font-family: "Noto Sans JP", sans-serif !important; }'
 	);
 
-	// Footer 3-column row tweak: make the privacy-mark column slimmer and centered.
+	// Footer 3-column row tweak: size columns by content to reduce unnecessary gaps.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'@media (min-width: 1000px) { [data-footer*="type-1"] .ct-footer [data-row*="top"] > div { grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr) !important; column-gap: 16px !important; align-items: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] { font-size: 12px !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] :is(p, li, a, span, div) { font-size: 12px !important; line-height: 1.6 !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] { justify-content: center !important; align-items: center !important; text-align: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] img { width: min(140px, 100%) !important; height: auto !important; margin-inline: auto !important; } }'
+		'@media (min-width: 1000px) { [data-footer*="type-1"] .ct-footer [data-row*="top"] > div { grid-template-columns: auto auto minmax(0, 1fr) !important; column-gap: 12px !important; align-items: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] { justify-content: center !important; align-items: center !important; text-align: center !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column="widget-area-1"] img { width: min(140px, 100%) !important; height: auto !important; margin-inline: auto !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] { font-size: 12px !important; } [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] :is(p, li, a, span, div) { font-size: 12px !important; line-height: 1.6 !important; } }'
 	);
 
 	// Remove background colors only inside the footer top widget area.
