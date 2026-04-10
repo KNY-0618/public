@@ -48,7 +48,7 @@ function jqs_enqueue_noto_sans_jp() {
 	// Header tweak: middle row horizontal padding + hide top/bottom rows temporarily.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'.ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"], .ct-header [data-row*="bottom"] { display: none !important; }'
+		'[data-header*="type-1"] { --header-height: 80px !important; --header-sticky-height: 80px !important; } .ct-header [data-row*="middle"] { --height: 80px !important; } .ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"], .ct-header [data-row*="bottom"] { display: none !important; }'
 	);
 }
 add_action('wp_enqueue_scripts', 'jqs_enqueue_noto_sans_jp', 20);
