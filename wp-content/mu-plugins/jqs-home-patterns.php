@@ -28,32 +28,32 @@ function jqs_register_home_patterns() {
 	$image_url = esc_url(home_url('/wp-content/uploads/2026/04/momotarou_top_img.png'));
 
 	$pattern_content = '
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"72px","bottom":"72px","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"1280px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:72px;padding-right:0;padding-bottom:72px;padding-left:0">
-<!-- wp:columns {"verticalAlignment":"center","className":"jqs-momotaro-intro","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center jqs-momotaro-intro">
-<!-- wp:column {"width":"30%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:30%">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"jqs-momotaro-intro__image"} -->
-<figure class="wp-block-image size-full jqs-momotaro-intro__image"><img src="' . $image_url . '" alt="" /></figure>
+<!-- wp:group {"align":"full","layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group alignfull">
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center">
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $image_url . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"70%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%">
-<!-- wp:heading {"level":2,"className":"jqs-momotaro-intro__title"} -->
-<h2 class="wp-block-heading jqs-momotaro-intro__title">より速く・より正確に・より安全に</h2>
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">より速く・より正確に・より安全に</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"jqs-momotaro-intro__text"} -->
-<p class="jqs-momotaro-intro__text">桃太郎のおとぎ話は、どなたでもご存じです。<br>犬（勇敢、敏速）猿（知恵と計画性）雉（空を飛んで情報収集と慎重性）これらをまとめてシステム化するコーディネーターとしての桃太郎の役割・・・。そして宝物を運ぶ訳であります。<br>このような桃太郎のおとぎ話にあてはめ、「より速く、より正確に、より安全に」をモットーとしたのが「桃太郎便」であります。</p>
+<!-- wp:paragraph -->
+<p>桃太郎のおとぎ話は、どなたでもご存じです。<br>犬（勇敢、敏速）猿（知恵と計画性）雉（空を飛んで情報収集と慎重性）これらをまとめてシステム化するコーディネーターとしての桃太郎の役割・・・。そして宝物を運ぶ訳であります。<br>このような桃太郎のおとぎ話にあてはめ、「より速く、より正確に、より安全に」をモットーとしたのが「桃太郎便」であります。</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"36px"}}}} -->
-<div class="wp-block-buttons" style="margin-top:36px">
-<!-- wp:button {"backgroundColor":"vivid-pink-cyan","textColor":"white","width":100,"style":{"border":{"radius":"0px"},"typography":{"fontSize":"24px","fontWeight":"600"},"spacing":{"padding":{"top":"18px","bottom":"18px"}}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-white-color has-vivid-pink-cyan-background-color has-text-color has-background wp-element-button" style="border-radius:0px;padding-top:18px;padding-bottom:18px;font-size:24px;font-style:normal;font-weight:600">Amazon配送のお問い合わせ・再配達のご依頼・お荷物の追跡はコチラ</a></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Amazon配送のお問い合わせ・再配達のご依頼・お荷物の追跡はコチラ</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -76,16 +76,3 @@ function jqs_register_home_patterns() {
 	);
 }
 add_action('init', 'jqs_register_home_patterns');
-
-/**
- * Add responsive style for the pattern layout.
- */
-function jqs_home_patterns_style() {
-	wp_register_style('jqs-home-patterns-style', false, [], null);
-	wp_enqueue_style('jqs-home-patterns-style');
-	wp_add_inline_style(
-		'jqs-home-patterns-style',
-		'.jqs-momotaro-intro__image img { width: 100%; max-width: 420px; height: auto; } .jqs-momotaro-intro { gap: 0 !important; }'
-	);
-}
-add_action('wp_enqueue_scripts', 'jqs_home_patterns_style', 25);
