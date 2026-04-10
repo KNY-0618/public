@@ -60,24 +60,3 @@ function jqs_enqueue_noto_sans_jp_editor() {
 	);
 }
 add_action('enqueue_block_editor_assets', 'jqs_enqueue_noto_sans_jp_editor');
-
-/**
- * Apply Noto Sans JP on wp-admin and login screens.
- */
-function jqs_enqueue_noto_sans_jp_admin() {
-	wp_enqueue_style(
-		'jqs-noto-sans-jp-admin-font',
-		jqs_get_noto_sans_jp_url(),
-		[],
-		null
-	);
-
-	wp_register_style('jqs-noto-sans-jp-admin', false, ['jqs-noto-sans-jp-admin-font'], null);
-	wp_enqueue_style('jqs-noto-sans-jp-admin');
-	wp_add_inline_style(
-		'jqs-noto-sans-jp-admin',
-		'body, body * { font-family: "Noto Sans JP", sans-serif !important; }'
-	);
-}
-add_action('admin_enqueue_scripts', 'jqs_enqueue_noto_sans_jp_admin');
-add_action('login_enqueue_scripts', 'jqs_enqueue_noto_sans_jp_admin');
