@@ -213,18 +213,18 @@ function jqs_register_home_patterns() {
 
 <!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center">
-<!-- wp:column {"width":"35%"} -->
-<div class="wp-block-column" style="flex-basis:35%">
-<!-- wp:heading {"level":5,"textAlign":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
-<h5 class="wp-block-heading has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">スポットチャーター</h5>
+<!-- wp:column {"width":"35%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%">
+<!-- wp:heading {"level":5,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"border":{"color":"#3b58b7","width":"1px","style":"solid"},"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem"},"margin":{"top":"0","bottom":"0"}}}} -->
+<h5 class="wp-block-heading has-text-align-center has-vivid-cyan-blue-color has-text-color" style="border-style:solid;border-color:#3b58b7;border-width:1px;margin-top:0;margin-bottom:0;padding-top:0.5rem;padding-bottom:0.5rem">スポットチャーター</h5>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"65%"} -->
-<div class="wp-block-column" style="flex-basis:65%">
-<!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">緊急輸送</h4>
+<!-- wp:column {"width":"65%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%">
+<!-- wp:heading {"level":4,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h4 class="wp-block-heading" style="margin-top:0;margin-bottom:0">緊急輸送</h4>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
@@ -252,11 +252,11 @@ function jqs_register_home_patterns() {
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"3%"} -->
-<div class="wp-block-column" style="flex-basis:3%">
-<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
-<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
-<!-- /wp:paragraph -->
+<!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
+<!-- wp:heading {"level":4,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h4 class="wp-block-heading has-text-align-center has-vivid-cyan-blue-color has-text-color" style="margin-top:0;margin-bottom:0">›</h4>
+<!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
 
@@ -275,11 +275,11 @@ function jqs_register_home_patterns() {
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"3%"} -->
-<div class="wp-block-column" style="flex-basis:3%">
-<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
-<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
-<!-- /wp:paragraph -->
+<!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
+<!-- wp:heading {"level":4,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h4 class="wp-block-heading has-text-align-center has-vivid-cyan-blue-color has-text-color" style="margin-top:0;margin-bottom:0">›</h4>
+<!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
 
@@ -298,27 +298,27 @@ function jqs_register_home_patterns() {
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"3%"} -->
-<div class="wp-block-column" style="flex-basis:3%">
-<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
-<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
-<!-- /wp:paragraph -->
+<!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
+<!-- wp:heading {"level":4,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h4 class="wp-block-heading has-text-align-center has-vivid-cyan-blue-color has-text-color" style="margin-top:0;margin-bottom:0">›</h4>
+<!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"8%"} -->
-<div class="wp-block-column" style="flex-basis:8%">
+<!-- wp:column {"width":"14%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:14%">
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $chokusou_pic . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"3%"} -->
-<div class="wp-block-column" style="flex-basis:3%">
-<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
-<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
-<!-- /wp:paragraph -->
+<!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
+<!-- wp:heading {"level":4,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h4 class="wp-block-heading has-text-align-center has-vivid-cyan-blue-color has-text-color" style="margin-top:0;margin-bottom:0">›</h4>
+<!-- /wp:heading -->
 </div>
 <!-- /wp:column -->
 
@@ -343,10 +343,10 @@ function jqs_register_home_patterns() {
 <div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"backgroundColor":"pale-cyan-blue","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-pale-cyan-blue-background-color has-background" style="padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">24h365日対応　お客様が必要とする時に、<span style="color:#ff99cc;">迅速なサービスをご提供</span>いたします</p>
+<!-- wp:group {"style":{"color":{"background":"#efe4cf"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="background-color:#efe4cf;padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">24h365日対応　お客様が必要とする時に、<span style="color:#ff99cc;">迅速なサービスをご提供</span>いたします</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
