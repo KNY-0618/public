@@ -189,6 +189,180 @@ function jqs_register_home_patterns() {
 			'content'     => $service_pattern_content,
 		]
 	);
+
+	$call_pic = esc_url(home_url('/wp-content/uploads/2026/04/call_pic.png'));
+	$callstaff_pic = esc_url(home_url('/wp-content/uploads/2026/04/callstaff_pic.png'));
+	$track_pic = esc_url(home_url('/wp-content/uploads/2026/04/track_pic.png'));
+	$chokusou_pic = esc_url(home_url('/wp-content/uploads/2026/04/chokusou_pic.png'));
+	$two_container_pic = esc_url(home_url('/wp-content/uploads/2026/04/two-container_pic.png'));
+
+	$service_flow_pattern_content = '
+<!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-bottom:1rem">
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">サービス</h2>
+<!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center">
+<!-- wp:column {"width":"35%"} -->
+<div class="wp-block-column" style="flex-basis:35%">
+<!-- wp:heading {"level":5,"textAlign":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<h5 class="wp-block-heading has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">スポットチャーター</h5>
+<!-- /wp:heading -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"65%"} -->
+<div class="wp-block-column" style="flex-basis:65%">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">緊急輸送</h4>
+<!-- /wp:heading -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile">
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"2px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:2px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $call_pic . '" alt="" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">発注</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"3%"} -->
+<div class="wp-block-column" style="flex-basis:3%">
+<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
+<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"2px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:2px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $callstaff_pic . '" alt="" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">受注</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"3%"} -->
+<div class="wp-block-column" style="flex-basis:3%">
+<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
+<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"2px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:2px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $track_pic . '" alt="" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">集荷</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"3%"} -->
+<div class="wp-block-column" style="flex-basis:3%">
+<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
+<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"8%"} -->
+<div class="wp-block-column" style="flex-basis:8%">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $chokusou_pic . '" alt="" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"3%"} -->
+<div class="wp-block-column" style="flex-basis:3%">
+<!-- wp:paragraph {"align":"center","textColor":"vivid-cyan-blue"} -->
+<p class="has-text-align-center has-vivid-cyan-blue-color has-text-color">›</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"16%"} -->
+<div class="wp-block-column" style="flex-basis:16%">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"2px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:2px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="' . $two_container_pic . '" alt="" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">お届け</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":"28px"} -->
+<div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"backgroundColor":"pale-cyan-blue","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-pale-cyan-blue-background-color has-background" style="padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">24h365日対応　お客様が必要とする時に、<span style="color:#ff99cc;">迅速なサービスをご提供</span>いたします</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+';
+
+	register_block_pattern(
+		'jqs-home/service-flow-spot-charter',
+		[
+			'title'       => __('Service Flow - Spot Charter', 'default'),
+			'description' => __('Service process flow section with editable pictograms and text.', 'default'),
+			'categories'  => ['jqs-home'],
+			'content'     => $service_flow_pattern_content,
+		]
+	);
 }
 add_action('init', 'jqs_register_home_patterns');
 
