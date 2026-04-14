@@ -75,24 +75,16 @@ function jqs_register_home_patterns() {
 	$service_pattern_content = '
 <!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group alignfull has-white-background-color has-background">
-<!-- wp:cover {"url":"' . $service_banner . '","id":0,"dimRatio":40,"isUserOverlayColor":true,"minHeight":230,"minHeightUnit":"px"} -->
-<div class="wp-block-cover" style="min-height:230px"><img class="wp-block-cover__image-background" alt="" src="' . $service_banner . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container">
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">サービス概要</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">SERVICE</p>
-<!-- /wp:paragraph -->
-</div></div>
+<!-- wp:cover {"url":"' . $service_banner . '","id":0,"dimRatio":0,"isUserOverlayColor":true,"minHeight":230,"minHeightUnit":"px"} -->
+<div class="wp-block-cover" style="min-height:230px"><img class="wp-block-cover__image-background" alt="" src="' . $service_banner . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:spacer {"height":"60px"} -->
 <div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"border":{"color":"#22326e","width":"4px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#22326e;border-width:4px;padding-top:1rem;padding-bottom:1rem">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-bottom:1rem">
 <!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center">3つの“お届け”サービス</p>
 <!-- /wp:paragraph -->
@@ -107,16 +99,16 @@ function jqs_register_home_patterns() {
 <div class="wp-block-columns">
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">1</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_1 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">スポットチャーター</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">スポットチャーター</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -131,16 +123,16 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">2</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">2</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_2 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">BtoC</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">BtoC</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -155,16 +147,16 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">3</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">3</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_3 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">企業専属チャーター</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">企業専属チャーター</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
