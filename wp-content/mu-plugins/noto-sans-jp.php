@@ -30,7 +30,7 @@ function jqs_enqueue_noto_sans_jp() {
 	wp_enqueue_style('jqs-noto-sans-jp-global');
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'body, body * { font-family: "Noto Sans JP", sans-serif !important; }'
+		'body, p, h1, h2, h3, h4, h5, h6, li, a, span, div, button, input, select, textarea { font-family: "Noto Sans JP", sans-serif !important; } #wpadminbar .ab-icon::before, #wpadminbar .ab-item::before, #wpadminbar [class*="dashicons"]::before, .dashicons::before { font-family: dashicons !important; }'
 	);
 
 	// Footer 3-column row tweak: size columns by content to reduce unnecessary gaps.
