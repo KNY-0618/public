@@ -91,8 +91,8 @@ function jqs_register_home_patterns() {
 <div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"border":{"color":"#22326e","width":"4px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#22326e;border-width:4px">
+<!-- wp:group {"style":{"border":{"color":"#22326e","width":"4px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#22326e;border-width:4px;padding-top:1rem;padding-bottom:1rem">
 <!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center">3つの“お届け”サービス</p>
 <!-- /wp:paragraph -->
@@ -107,8 +107,8 @@ function jqs_register_home_patterns() {
 <div class="wp-block-columns">
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","backgroundColor":"vivid-pink-cyan","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-vivid-pink-cyan-background-color has-text-color has-background">1</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
@@ -131,8 +131,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","backgroundColor":"vivid-pink-cyan","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-vivid-pink-cyan-background-color has-text-color has-background">2</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">2</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
@@ -155,8 +155,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","backgroundColor":"vivid-pink-cyan","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-vivid-pink-cyan-background-color has-text-color has-background">3</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#e63888"},"border":{"radius":"999px"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#e63888">3</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
