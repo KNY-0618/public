@@ -73,8 +73,8 @@ function jqs_register_home_patterns() {
 	$service_image_3 = esc_url(home_url('/wp-content/uploads/2026/04/deliveryservice3.png'));
 
 	$service_pattern_content = '
-<!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-group alignfull has-white-background-color has-background">
+<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-service-overview","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull jqs-service-overview has-white-background-color has-background">
 <!-- wp:cover {"url":"' . $service_banner . '","id":0,"dimRatio":0,"isUserOverlayColor":true,"minHeight":230,"minHeightUnit":"px"} -->
 <div class="wp-block-cover" style="min-height:230px"><img class="wp-block-cover__image-background" alt="" src="' . $service_banner . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>
 <!-- /wp:cover -->
@@ -100,7 +100,7 @@ function jqs_register_home_patterns() {
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:html -->
-<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+<div class="jqs-service-badge" style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
 	<h4 style="margin:0;color:#ffffff;">1</h4>
 </div>
 <!-- /wp:html -->
@@ -126,7 +126,7 @@ function jqs_register_home_patterns() {
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:html -->
-<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+<div class="jqs-service-badge" style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
 	<h4 style="margin:0;color:#ffffff;">2</h4>
 </div>
 <!-- /wp:html -->
@@ -152,7 +152,7 @@ function jqs_register_home_patterns() {
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:html -->
-<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+<div class="jqs-service-badge" style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
 	<h4 style="margin:0;color:#ffffff;">3</h4>
 </div>
 <!-- /wp:html -->
@@ -191,3 +191,16 @@ function jqs_register_home_patterns() {
 	);
 }
 add_action('init', 'jqs_register_home_patterns');
+
+/**
+ * Runtime styles for service section corrections.
+ */
+function jqs_home_patterns_runtime_styles() {
+	wp_register_style('jqs-home-patterns-runtime', false, [], null);
+	wp_enqueue_style('jqs-home-patterns-runtime');
+	wp_add_inline_style(
+		'jqs-home-patterns-runtime',
+		'[style*="background-color:#3359d3"] { background-color: #344da8 !important; } .jqs-service-overview .jqs-service-badge { width: 90px !important; height: 90px !important; border-radius: 999px !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 1rem auto !important; } .jqs-service-overview .jqs-service-badge > * { margin: 0 !important; line-height: 1 !important; } .wp-block-column > p.has-background.has-white-color.has-text-align-center:has(+ figure.wp-block-image) { width: 90px !important; height: 90px !important; border-radius: 999px !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 1rem auto !important; padding: 0 !important; line-height: 1 !important; background-color: #ff99cc !important; }'
+	);
+}
+add_action('wp_enqueue_scripts', 'jqs_home_patterns_runtime_styles', 30);
