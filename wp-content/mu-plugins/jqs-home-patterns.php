@@ -85,9 +85,9 @@ function jqs_register_home_patterns() {
 
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-bottom:1rem">
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">3つの“お届け”サービス</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">3つの“お届け”サービス</h2>
+<!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
 
@@ -99,84 +99,78 @@ function jqs_register_home_patterns() {
 <div class="wp-block-columns">
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
-<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">1</p>
-<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+	<h4 style="margin:0;color:#ffffff;">1</h4>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_1 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">スポットチャーター</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":5,"textAlign":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<h5 class="wp-block-heading has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">スポットチャーター</h5>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">緊急輸送</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":4,"textAlign":"center"} -->
+<h4 class="wp-block-heading has-text-align-center">緊急輸送</h4>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">急遽発生する配送ニーズにも、全国1,000社のネットワークを活用し、当日納品を実現いたします。</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">急遽発生する配送ニーズにも、全国1,000社のネットワークを活用し、当日納品を実現いたします。</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
-<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">2</p>
-<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+	<h4 style="margin:0;color:#ffffff;">2</h4>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_2 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">BtoC</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":5,"textAlign":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<h5 class="wp-block-heading has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">BtoC</h5>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">宅配サービス</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":4,"textAlign":"center"} -->
+<h4 class="wp-block-heading has-text-align-center">宅配サービス</h4>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">EC市場の成長に伴う宅配ニーズに、20年にわたり業界をリードし、進化し続けるサービスをご提供いたします。</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">EC市場の成長に伴う宅配ニーズに、20年にわたり業界をリードし、進化し続けるサービスをご提供いたします。</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
-<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">3</p>
-<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:90px;height:90px;border-radius:999px;background-color:#ff99cc;margin:0 auto 1rem auto;display:flex;align-items:center;justify-content:center;">
+	<h4 style="margin:0;color:#ffffff;">3</h4>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_3 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">企業専属チャーター</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":5,"textAlign":"center","textColor":"white","style":{"color":{"background":"#3b58b7"}}} -->
+<h5 class="wp-block-heading has-text-align-center has-white-color has-text-color has-background" style="background-color:#3b58b7">企業専属チャーター</h5>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">定期便</p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"level":4,"textAlign":"center"} -->
+<h4 class="wp-block-heading has-text-align-center">定期便</h4>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">お客様の専用車両として自由度が高く、配送プラスアルファのサービスをご提供いたします。</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">お客様の専用車両として自由度が高く、配送プラスアルファのサービスをご提供いたします。</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
