@@ -91,8 +91,8 @@ function jqs_register_home_patterns() {
 <div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"border":{"color":"#2eb79a","width":"4px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#2eb79a;border-width:4px">
+<!-- wp:group {"style":{"border":{"color":"#22326e","width":"4px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#22326e;border-width:4px">
 <!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center">3つの“お届け”サービス</p>
 <!-- /wp:paragraph -->
@@ -115,8 +115,8 @@ function jqs_register_home_patterns() {
 <figure class="wp-block-image size-full"><img src="' . $service_image_1 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#2eb79a"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#2eb79a">スポットチャーター</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">スポットチャーター</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -139,8 +139,8 @@ function jqs_register_home_patterns() {
 <figure class="wp-block-image size-full"><img src="' . $service_image_2 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#2eb79a"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#2eb79a">BtoC</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">BtoC</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -163,8 +163,8 @@ function jqs_register_home_patterns() {
 <figure class="wp-block-image size-full"><img src="' . $service_image_3 . '" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#2eb79a"}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#2eb79a">企業専属チャーター</p>
+<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#22326e"}}} -->
+<p class="has-text-align-center has-white-color has-text-color has-background" style="background-color:#22326e">企業専属チャーター</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
