@@ -216,7 +216,7 @@ function jqs_register_home_patterns() {
 <div class="wp-block-columns are-vertically-aligned-center">
 <!-- wp:column {"width":"35%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%">
-<!-- wp:heading {"level":5,"textAlign":"center","textColor":"vivid-cyan-blue","style":{"border":{"color":"#3b58b7","width":"1px","style":"solid"},"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem"},"margin":{"top":"0","bottom":"0"}}}} -->
+<!-- wp:heading {"level":5,"textAlign":"center","style":{"border":{"color":"#3b58b7","width":"2px","style":"solid"},"color":{"text":"#3b58b7"},"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem"},"margin":{"top":"0","bottom":"0"}}}} -->
 <h5 class="wp-block-heading has-text-align-center" style="border-style:solid;border-color:#3b58b7;border-width:2px;color:#3b58b7;margin-top:0;margin-bottom:0;padding-top:0.5rem;padding-bottom:0.5rem">スポットチャーター</h5>
 <!-- /wp:heading -->
 </div>
@@ -247,7 +247,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:paragraph {"align":"center"} -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
 <p class="has-text-align-center" style="font-weight:700">発注</p>
 <!-- /wp:paragraph -->
 </div>
@@ -255,8 +255,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . $allow_right_pic . '" alt="" /></figure>
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"-22px"}}}} -->
+<figure class="wp-block-image size-full" style="margin-top:-22px"><img src="' . $allow_right_pic . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
@@ -270,7 +270,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:paragraph {"align":"center"} -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
 <p class="has-text-align-center" style="font-weight:700">受注</p>
 <!-- /wp:paragraph -->
 </div>
@@ -278,8 +278,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . $allow_right_pic . '" alt="" /></figure>
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"-22px"}}}} -->
+<figure class="wp-block-image size-full" style="margin-top:-22px"><img src="' . $allow_right_pic . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
@@ -293,16 +293,16 @@ function jqs_register_home_patterns() {
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">集荷</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">集荷</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . $allow_right_pic . '" alt="" /></figure>
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"-22px"}}}} -->
+<figure class="wp-block-image size-full" style="margin-top:-22px"><img src="' . $allow_right_pic . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
@@ -317,8 +317,8 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column {"width":"3%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:3%">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . $allow_right_pic . '" alt="" /></figure>
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"-22px"}}}} -->
+<figure class="wp-block-image size-full" style="margin-top:-22px"><img src="' . $allow_right_pic . '" alt="" /></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:column -->
@@ -332,8 +332,8 @@ function jqs_register_home_patterns() {
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">お届け</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-text-align-center" style="font-weight:700">お届け</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -344,8 +344,8 @@ function jqs_register_home_patterns() {
 <div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"color":{"background":"#ffffa0"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-background" style="background-color:#ffffa0;padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
+<!-- wp:group {"style":{"color":{"background":"#fff5dc"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="background-color:#fff5dc;padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700"}}} -->
 <p class="has-text-align-center" style="font-weight:700">24h365日対応　お客様が必要とする時に、<span style="color:#ff99cc;">迅速なサービスをご提供</span>いたします</p>
 <!-- /wp:paragraph -->
