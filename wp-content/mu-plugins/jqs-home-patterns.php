@@ -99,9 +99,13 @@ function jqs_register_home_patterns() {
 <div class="wp-block-columns">
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">1</p>
+<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
+<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">1</p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_1 . '" alt="" /></figure>
@@ -123,9 +127,13 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">2</p>
+<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
+<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">2</p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_2 . '" alt="" /></figure>
@@ -147,9 +155,13 @@ function jqs_register_home_patterns() {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"align":"center","textColor":"white","style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
-<p class="has-text-align-center has-white-color has-text-color has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:90px;width:90px;margin-left:auto;margin-right:auto">3</p>
+<!-- wp:group {"style":{"color":{"background":"#ff99cc"},"border":{"radius":"999px"},"dimensions":{"minHeight":"90px"},"spacing":{"margin":{"left":"auto","right":"auto"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"90px"}} -->
+<div class="wp-block-group has-background" style="border-radius:999px;background-color:#ff99cc;min-height:90px;margin-left:auto;margin-right:auto;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">3</p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="' . $service_image_3 . '" alt="" /></figure>
