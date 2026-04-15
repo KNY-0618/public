@@ -45,12 +45,12 @@ function jqs_enqueue_noto_sans_jp() {
 		'[data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .has-background, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .wp-block-group, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] [style*="background"] { background: transparent !important; }'
 	);
 
-	// Header tweak: middle row horizontal padding + hide top/bottom rows temporarily.
-	wp_add_inline_style(
-		'jqs-noto-sans-jp-global',
-		'[data-header*="type-1"] { --header-height: 80px !important; --header-sticky-height: 80px !important; } .ct-header [data-row*="middle"] { --height: 80px !important; } .ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"], .ct-header [data-row*="bottom"] { display: none !important; }'
-	);
-}
+	// Header tweak: middle row horizontal padding + collapse top/bottom rows only when unused.
+		wp_add_inline_style(
+			'jqs-noto-sans-jp-global',
+			'.ct-header [data-id="menu"] > ul > li > a { --theme-line-height: 1.3 !important; } .ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"][data-column-set="0"], .ct-header [data-row*="bottom"][data-column-set="0"] { --height: 0 !important; min-height: 0 !important; margin: 0 !important; border: 0 !important; } .ct-header [data-row*="top"][data-column-set="0"] > div, .ct-header [data-row*="bottom"][data-column-set="0"] > div { min-height: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }'
+		);
+	}
 add_action('wp_enqueue_scripts', 'jqs_enqueue_noto_sans_jp', 20);
 
 /**
