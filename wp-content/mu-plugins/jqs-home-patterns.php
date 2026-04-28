@@ -321,6 +321,13 @@ function jqs_register_home_patterns() {
 				'label' => __('お問い合わせ', 'default'),
 			]
 		);
+
+		register_block_pattern_category(
+			'jqs-privacy',
+			[
+				'label' => __('プライバシー', 'default'),
+			]
+		);
 	}
 
 	$image_url = esc_url(home_url('/wp-content/uploads/2026/04/momotarou_top_img.png'));
@@ -2649,6 +2656,62 @@ function jqs_register_home_patterns() {
 			'description' => __('Privacy handling section for contact page.', 'default'),
 			'categories'  => ['jqs-contact'],
 			'content'     => $contact_privacy_pattern_content,
+		]
+	);
+
+	$privacy_policy_pattern_content = '
+<!-- wp:group {"align":"full","className":"jqs-contact-page-privacy","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull jqs-contact-page-privacy">
+<!-- wp:heading {"level":3,"textAlign":"center","textColor":"white","className":"jqs-independent-startup__section-title","style":{"color":{"background":"#3b58b7"}}} -->
+<h3 class="wp-block-heading has-text-align-center jqs-independent-startup__section-title has-white-color has-text-color has-background" style="background-color:#3b58b7">個人情報保護方針</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">下記事項をご確認の上、同意していただける場合は[同意する]にチェックを入れてください。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"border":{"color":"#bdbdbd","width":"1px"},"spacing":{"padding":{"top":"1.4rem","right":"1.4rem","bottom":"1.4rem","left":"1.4rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-color:#bdbdbd;border-width:1px;padding-top:1.4rem;padding-right:1.4rem;padding-bottom:1.4rem;padding-left:1.4rem">
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">1. 個人情報は、適切、厳重に管理し、お客様の個人情報への不正アクセスや紛失、破壊、改ざん、漏えい等が起きないように安全対策を実施しております。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">■オーナードライバー応募における個人情報<br>採用のための個人情報の取得であり、それ以外の目的での利用はしません。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">■個人情報の委託・提供<br>当社では、取得した個人情報の外部委託は行いません。<br>また、法令に定めがある場合を除き、本人の同意を得ない限り第三者への提供は行いません。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">■個人情報の提供の任意性<br>応募者の個人情報の提供は任意ですが、必要な個人情報の一部または全部を提供されなかった場合は採用判断において不利に取り扱われる可能性があります。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">■開示等の求めに応じる手続き<br>応募者は、当社に対して自己の個人情報を開示するよう請求する権利、当該本人が識別される保有個人データの内容が事実でないときは訂正を請求する権利、自己の個人情報の削除を請求する権利を有します。<br>(1) 自らに関する個人情報の開示、訂正、削除等のお申し出があったときは、遅滞なくその調査を行い、訂正、削除の必要とする理由があるときは、原則5営業日内に、訂正、削除を行います。<br>(2) 個人情報に関する開示等の求めは、下記、お問い合わせ窓口に電話またはメールでご連絡ください。<br>(3) 個人情報の開示等の求めをする方が、ご本人であることを、ご本人のみが知りえる情報にて確認させていただきます。また代理人の場合、委任状等そのことを証明する文書を添付してください。<br>(4) 手続きに対して手数料は徴収いたしません。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">【お問い合わせ窓口】<br>個人情報に関するお問合せにつきましては、下記窓口で受け付けております。<br>東京都荒川区南千住3-5-20 丸和通運ビル2階<br>株式会社ジャパンクイックサービス<br>個人情報保護相談窓口責任者　PMS担当<br>mail：jqs-kanri@momotaro.co.jp<br>※土・日曜日、祝祭日、年末年始は翌営業日以降の対応とさせて頂きます。<br>※本窓口は個人情報に関するお問合せ窓口です。配送に関するお問い合わせはそれぞれのお問合せ窓口にお願いします。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
+<p style="font-size:14pt">■認定個人情報保護団体<br>当法人は、以下の認定個人情報保護団体の対象事業者です。<br>認定個人情報保護団体の名称及び、苦情の解決の申出先は以下のとおりです。<br>認定個人情報保護団体の名称：一般財団法人日本情報経済社会推進協会<br>苦情の解決の申出先：個人情報保護苦情相談室<br>〒106-0032 東京都港区六本木一丁目9番9号六本木ファーストビル内<br>TEL：03-5860-7565 / 0120-700-779</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+';
+
+	register_block_pattern(
+		'jqs-privacy/privacy-policy',
+		[
+			'title'       => __('個人情報保護方針', 'default'),
+			'description' => __('独立開業スタイルのタイトル＋本文14ptの個人情報保護方針パターン。', 'default'),
+			'categories'  => ['jqs-privacy'],
+			'content'     => $privacy_policy_pattern_content,
 		]
 	);
 
