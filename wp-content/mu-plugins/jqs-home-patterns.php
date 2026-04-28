@@ -2614,8 +2614,8 @@ function jqs_register_home_patterns() {
 <p style="font-size:14px">下記事項をご確認の上、同意していただける場合は[同意する]にチェックを入れてください。</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"border":{"color":"#bdbdbd","width":"1px"},"spacing":{"padding":{"top":"1.4rem","right":"1.4rem","bottom":"1.4rem","left":"1.4rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-color:#bdbdbd;border-width:1px;padding-top:1.4rem;padding-right:1.4rem;padding-bottom:1.4rem;padding-left:1.4rem">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1.4rem","right":"1.4rem","bottom":"1.4rem","left":"1.4rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:1.4rem;padding-right:1.4rem;padding-bottom:1.4rem;padding-left:1.4rem">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"}}} -->
 <p style="font-size:14px">1. 個人情報は、適切、厳重に管理し、お客様の個人情報への不正アクセスや紛失、破壊、改ざん、漏えい等が起きないように安全対策を実施しております。</p>
 <!-- /wp:paragraph -->
@@ -3913,6 +3913,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-contact-page-form .jqs-contact-form-placeholder { border: 1px solid #d9d9d9 !important; background: #f7f7f7 !important; padding: 1rem !important; } '
 		. '.jqs-contact-page-form .jqs-contact-form-placeholder p { margin: 0 0 0.5rem 0 !important; } '
 		. '.jqs-contact-page-form .jqs-contact-form-placeholder p:last-child { margin-bottom: 0 !important; } '
+		. '.jqs-contact-page-privacy > .wp-block-group { border: none !important; box-shadow: none !important; } '
 		. '.jqs-cf7-contact-table { width: min(100%, 1100px) !important; max-width: 1100px !important; margin-left: auto !important; margin-right: auto !important; border: 1px solid #d8d8d8 !important; background: #f0f0ee !important; font-size: 14px !important; line-height: 1.6 !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__header { background: #3b58b7 !important; color: #ffffff !important; padding: 0.8rem 1.2rem !important; font-size: ' . $header_font_size . 'px !important; line-height: 1.2 !important; font-weight: 400 !important; letter-spacing: 0 !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__row { display: grid !important; grid-template-columns: 180px minmax(0, 1fr) !important; border-top: 1px solid #d8d8d8 !important; } '
