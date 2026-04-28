@@ -4025,6 +4025,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-independent-startup .jqs-independent-startup__banner { margin: 0 auto !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__banner img { width: 100% !important; height: auto !important; display: block !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__section-title { width: 100% !important; margin: 0 auto 0.8rem auto !important; margin-left: auto !important; margin-right: auto !important; padding: 0.8rem 1rem !important; background-color: #3b58b7 !important; color: #ffffff !important; text-align: center !important; box-sizing: border-box !important; } '
+		. '.jqs-contact-page-privacy .jqs-independent-startup__section-title { width: 100% !important; margin: 0 auto 0.8rem auto !important; margin-left: auto !important; margin-right: auto !important; padding: 0.8rem 1rem !important; background-color: #3b58b7 !important; color: #ffffff !important; text-align: center !important; box-sizing: border-box !important; } '
 		. '.jqs-independent-startup .has-text-align-center { text-align: center !important; } '
 		. '.jqs-independent-startup ul, .jqs-independent-startup ol { padding-left: 1.4em !important; margin-left: 0 !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__table { margin: 0 auto !important; margin-left: auto !important; margin-right: auto !important; } '
