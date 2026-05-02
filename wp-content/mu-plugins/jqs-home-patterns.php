@@ -297,7 +297,7 @@ function jqs_register_home_patterns() {
 		register_block_pattern_category(
 			'jqs-newgraduate',
 			[
-				'label' => __('採用情報', 'default'),
+				'label' => __('新人採用', 'default'),
 			]
 		);
 
@@ -1554,12 +1554,12 @@ function jqs_register_home_patterns() {
 <div class="wp-block-group alignfull jqs-recruit-anchor-buttons">
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"1rem"}}} -->
 <div class="wp-block-buttons">
-<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"typography":{"fontSize":"28px","fontWeight":"700"},"spacing":{"padding":{"top":"20px","right":"160px","bottom":"20px","left":"160px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#newgrad" style="font-size:28px;font-weight:700;padding-top:20px;padding-right:160px;padding-bottom:20px;padding-left:160px">新卒採用</a></div>
+<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"spacing":{"padding":{"top":"20px","right":"160px","bottom":"20px","left":"160px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#newgrad" style="padding-top:20px;padding-right:160px;padding-bottom:20px;padding-left:160px">新卒採用</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"typography":{"fontSize":"28px","fontWeight":"700"},"spacing":{"padding":{"top":"20px","right":"160px","bottom":"20px","left":"160px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#career" style="font-size:28px;font-weight:700;padding-top:20px;padding-right:160px;padding-bottom:20px;padding-left:160px">中途採用</a></div>
+<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"spacing":{"padding":{"top":"20px","right":"160px","bottom":"20px","left":"160px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#career" style="padding-top:20px;padding-right:160px;padding-bottom:20px;padding-left:160px">中途採用</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -1576,6 +1576,8 @@ function jqs_register_home_patterns() {
 			'content'     => $recruit_anchor_buttons_pattern_content,
 		]
 	);
+
+	unregister_block_pattern('jqs-newgraduate/delivery-title-box');
 
 	$independent_opening_pattern_content = '
 <!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-independent-startup","layout":{"type":"constrained","contentSize":"1100px"}} -->
