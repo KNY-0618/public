@@ -4066,7 +4066,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-recruitment-links .jqs-recruitment-card { position: relative !important; transition: opacity 0.2s ease !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card:hover { opacity: 0.7 !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card-link-overlay { position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; z-index: 10 !important; display: block !important; text-indent: -9999px !important; overflow: hidden !important; } '
-		. '.jqs-independent-startup { text-align: inherit !important; } '
+		. '.jqs-independent-startup { text-align: inherit !important; max-width: 1100px !important; margin-left: auto !important; margin-right: auto !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__banner { margin: 0 auto !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__banner img { width: 100% !important; height: auto !important; display: block !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__section-title { width: 100% !important; margin: 0 auto 0.8rem auto !important; margin-left: auto !important; margin-right: auto !important; padding: 0.8rem 1rem !important; background-color: #3b58b7 !important; color: #ffffff !important; text-align: center !important; box-sizing: border-box !important; } '
