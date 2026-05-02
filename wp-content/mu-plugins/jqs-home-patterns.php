@@ -297,7 +297,7 @@ function jqs_register_home_patterns() {
 		register_block_pattern_category(
 			'jqs-newgraduate',
 			[
-				'label' => __('新人採用', 'default'),
+				'label' => __('採用情報', 'default'),
 			]
 		);
 
@@ -492,6 +492,30 @@ function jqs_register_home_patterns() {
 			'description' => __('Service banner and 3 delivery service cards section.', 'default'),
 			'categories'  => ['jqs-home'],
 			'content'     => $service_pattern_content,
+		]
+	);
+
+	$delivery_title_pattern_content = '
+<!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background">
+<!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#3b58b7">3つの“お届け”サービス</h2>
+<!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+';
+
+	register_block_pattern(
+		'jqs-newgraduate/delivery-title-box',
+		[
+			'title'       => __('採用情報 見出し（3つのお届けサービス）', 'default'),
+			'description' => __('TOPで使用している青枠・青文字見出しの流用パターン。', 'default'),
+			'categories'  => ['jqs-newgraduate'],
+			'content'     => $delivery_title_pattern_content,
 		]
 	);
 
