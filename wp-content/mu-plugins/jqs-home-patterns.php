@@ -3918,6 +3918,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__header { background: #3b58b7 !important; color: #ffffff !important; padding: 0.8rem 1.2rem !important; font-size: ' . $header_font_size . 'px !important; line-height: 1.2 !important; font-weight: 400 !important; letter-spacing: 0 !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__row { display: grid !important; grid-template-columns: 180px minmax(0, 1fr) !important; border-top: 1px solid #d8d8d8 !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__label { background: #3b58b7 !important; color: #ffffff !important; padding: 1.05rem 0.95rem !important; display: flex !important; align-items: center !important; font-size: 14px !important; line-height: 1.45 !important; font-weight: 700 !important; } '
+		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__label .jqs-required { color: #d63638 !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__field { padding: 0.7rem 0.95rem !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__field > .wpcf7-form-control-wrap { display: block !important; margin-bottom: 0.5rem !important; } '
 		. '.jqs-cf7-contact-table .jqs-cf7-contact-table__field > .wpcf7-form-control-wrap:last-child { margin-bottom: 0 !important; } '
