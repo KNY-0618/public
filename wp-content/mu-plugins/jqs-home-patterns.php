@@ -1549,6 +1549,34 @@ function jqs_register_home_patterns() {
 		]
 	);
 
+	$recruit_anchor_buttons_pattern_content = '
+<!-- wp:group {"align":"full","className":"jqs-recruit-anchor-buttons","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull jqs-recruit-anchor-buttons">
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"1rem"}}} -->
+<div class="wp-block-buttons">
+<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"typography":{"fontSize":"28px","fontWeight":"700"},"spacing":{"padding":{"top":"20px","right":"40px","bottom":"20px","left":"40px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#newgrad" style="font-size:28px;font-weight:700;padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:40px">新卒採用</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"palette-color-3","textColor":"white","style":{"typography":{"fontSize":"28px","fontWeight":"700"},"spacing":{"padding":{"top":"20px","right":"40px","bottom":"20px","left":"40px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-palette-color-3-background-color has-text-color has-background wp-element-button" href="#career" style="font-size:28px;font-weight:700;padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:40px">中途採用</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+';
+
+	register_block_pattern(
+		'jqs-recruit/recruit-anchor-buttons',
+		[
+			'title'       => __('採用情報 アンカーボタン（新卒/中途）', 'default'),
+			'description' => __('新卒採用・中途採用ボタンのアンカーリンク用パターン。リンク先はWP上で編集可能。', 'default'),
+			'categories'  => ['jqs-recruit'],
+			'content'     => $recruit_anchor_buttons_pattern_content,
+		]
+	);
+
 	$independent_opening_pattern_content = '
 <!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-independent-startup","layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group alignfull jqs-independent-startup has-white-background-color has-background">
