@@ -2154,14 +2154,14 @@ function jqs_register_home_patterns() {
 	);
 
 	$company_overview_banner_pattern_content = '
-<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background">
-<!-- wp:cover {"url":"' . $about_bg_pic . '","id":0,"dimRatio":0,"minHeight":210,"minHeightUnit":"px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-cover" style="margin-top:0;margin-bottom:0;min-height:210px"><img class="wp-block-cover__image-background" alt="" src="' . $about_bg_pic . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
+<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","style":{"spacing":{"padding":{"left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background" style="padding-right:0;padding-left:0">
+<!-- wp:cover {"url":"' . $about_bg_pic . '","id":0,"dimRatio":0,"minHeight":210,"minHeightUnit":"px","className":"jqs-company-overview-banner__cover","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover jqs-company-overview-banner__cover" style="margin-top:0;margin-bottom:0;min-height:210px"><img class="wp-block-cover__image-background" alt="" src="' . $about_bg_pic . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
-<!-- wp:heading {"level":3,"textAlign":"center","textColor":"white"} -->
-<h3 class="wp-block-heading has-text-align-center has-white-color has-text-color">会社概要</h3>
+<!-- wp:heading {"level":2,"textAlign":"center","textColor":"white"} -->
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color">会社概要</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white"} -->
@@ -2179,7 +2179,7 @@ function jqs_register_home_patterns() {
 		'jqs-home/company-overview-banner',
 		[
 			'title'       => __('Company Overview Banner', 'default'),
-			'description' => __('1100px company overview banner with H3 title and subtitle paragraph.', 'default'),
+			'description' => __('1100px company overview banner with H2 title and subtitle paragraph.', 'default'),
 			'categories'  => ['jqs-company'],
 			'content'     => $company_overview_banner_pattern_content,
 		]
@@ -4090,6 +4090,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '@media (max-width: 900px) { .jqs-independent-startup .jqs-independent-flow { grid-template-columns: 1fr !important; gap: 10px !important; } .jqs-independent-startup .jqs-independent-flow__item { clip-path: none !important; min-height: auto !important; } } '
 		. '.jqs-about-us-banner .jqs-about-us-banner-image { width: 100% !important; max-width: 900px !important; margin-left: auto !important; margin-right: auto !important; margin-bottom: 0 !important; } '
 		. '.jqs-about-us-banner .jqs-about-us-banner-image img { width: 100% !important; height: auto !important; display: block !important; } '
+		. '.jqs-company-overview-banner .jqs-company-overview-banner__cover { width: 1100px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; } '
 		. '.jqs-newgrad-job-accordion { padding-top: 2rem !important; padding-bottom: 2rem !important; } '
 		. '.jqs-newgrad-job-accordion > h2.wp-block-heading { margin-bottom: 0.8rem !important; } '
 		. '.jqs-newgrad-job-accordion > p { margin-bottom: 1.1rem !important; } '
