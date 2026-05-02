@@ -297,13 +297,6 @@ function jqs_register_home_patterns() {
 		register_block_pattern_category(
 			'jqs-newgraduate',
 			[
-				'label' => __('新人採用', 'default'),
-			]
-		);
-
-		register_block_pattern_category(
-			'jqs-recruit',
-			[
 				'label' => __('採用情報', 'default'),
 			]
 		);
@@ -1568,16 +1561,14 @@ function jqs_register_home_patterns() {
 ';
 
 	register_block_pattern(
-		'jqs-recruit/recruit-anchor-buttons',
+		'jqs-newgraduate/recruit-anchor-buttons',
 		[
 			'title'       => __('採用情報 アンカーボタン（新卒/中途）', 'default'),
 			'description' => __('新卒採用・中途採用ボタンのアンカーリンク用パターン。リンク先はWP上で編集可能。', 'default'),
-			'categories'  => ['jqs-recruit'],
+			'categories'  => ['jqs-newgraduate'],
 			'content'     => $recruit_anchor_buttons_pattern_content,
 		]
 	);
-
-	unregister_block_pattern('jqs-newgraduate/delivery-title-box');
 
 	$independent_opening_pattern_content = '
 <!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-independent-startup","layout":{"type":"constrained","contentSize":"1100px"}} -->
