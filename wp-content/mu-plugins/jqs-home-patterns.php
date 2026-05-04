@@ -4162,7 +4162,7 @@ function jqs_home_patterns_runtime_styles() {
 				. '.jqs-office-list .wp-block-columns.are-vertically-aligned-center > .wp-block-column:nth-child(2) p, .jqs-office-list .wp-block-columns.are-vertically-aligned-center > .wp-block-column:nth-child(3) p { font-size: 16px !important; line-height: 1.45 !important; margin: 0 !important; } '
 				. '.jqs-office-list .wp-block-columns.are-vertically-aligned-center > .wp-block-column:nth-child(4) { display: flex !important; align-items: center !important; padding-left: 2rem !important; } '
 				. '.jqs-office-list .wp-block-columns.are-vertically-aligned-center > .wp-block-column:nth-child(4) a { width: 100% !important; min-height: 42px !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 16px !important; line-height: 1.2 !important; } '
-				. '.jqs-management-philosophy { background-color: #f1f1f1 !important; padding-top: 0 !important; padding-bottom: 0 !important; } '
+				. '.jqs-management-philosophy { background-color: #f1f1f1 !important; } '
 				. '.jqs-management-philosophy > h2.wp-block-heading { } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__cards { align-items: stretch !important; } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__card { position: relative !important; background-color: #3b58b7 !important; border-radius: 20px !important; padding: 4rem 1.5rem 1.8rem !important; min-height: 260px !important; box-sizing: border-box !important; overflow: visible !important; } '
