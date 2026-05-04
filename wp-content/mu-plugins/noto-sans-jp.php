@@ -48,7 +48,7 @@ function jqs_enqueue_noto_sans_jp() {
 	// Header tweak was disabled to avoid interfering with Blocksy Header Builder UI.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
-		'@media (min-width: 1000px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 100px !important; } }'
+		'@media (min-width: 1000px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 100px !important; } [data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a { --theme-line-height: 1.2 !important; line-height: 1.2 !important; height: auto !important; padding-top: 0 !important; padding-bottom: 0 !important; display: inline-flex !important; align-items: center !important; } }'
 	);
 
 	// Global: disable dark cover overlay when placing text on banner images.
