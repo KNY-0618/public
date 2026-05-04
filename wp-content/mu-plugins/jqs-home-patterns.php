@@ -1560,6 +1560,16 @@ function jqs_register_home_patterns() {
 <!-- /wp:group -->
 ';
 
+	$recruit_blue_title_band_pattern_content = '
+<!-- wp:group {"align":"full","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull">
+<!-- wp:heading {"level":3,"textAlign":"center","textColor":"white","className":"jqs-independent-startup__section-title","style":{"color":{"background":"#3b58b7"}}} -->
+<h3 class="wp-block-heading has-text-align-center jqs-independent-startup__section-title has-white-color has-text-color has-background" style="background-color:#3b58b7">ダミータイトル</h3>
+<!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+';
+
 	register_block_pattern(
 		'jqs-newgraduate/recruit-anchor-buttons',
 		[
@@ -1567,6 +1577,16 @@ function jqs_register_home_patterns() {
 			'description' => __('新卒採用・中途採用ボタンのアンカーリンク用パターン。リンク先はWP上で編集可能。', 'default'),
 			'categories'  => ['jqs-newgraduate'],
 			'content'     => $recruit_anchor_buttons_pattern_content,
+		]
+	);
+
+	register_block_pattern(
+		'jqs-newgraduate/recruit-blue-title-band',
+		[
+			'title'       => __('採用情報 青帯タイトル', 'default'),
+			'description' => __('Independent startup style blue title band for recruit pages.', 'default'),
+			'categories'  => ['jqs-newgraduate'],
+			'content'     => $recruit_blue_title_band_pattern_content,
 		]
 	);
 
