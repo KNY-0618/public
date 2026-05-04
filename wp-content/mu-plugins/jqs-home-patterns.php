@@ -2154,8 +2154,8 @@ function jqs_register_home_patterns() {
 	);
 
 	$company_overview_banner_pattern_content = '
-<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","style":{"spacing":{"padding":{"left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background" style="padding-right:0;padding-left:0">
+<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background">
 <!-- wp:cover {"url":"' . $about_bg_pic . '","id":0,"dimRatio":0,"minHeight":210,"minHeightUnit":"px","className":"jqs-company-overview-banner__cover","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-cover jqs-company-overview-banner__cover" style="margin-top:0;margin-bottom:0;min-height:210px"><img class="wp-block-cover__image-background" alt="" src="' . $about_bg_pic . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -4171,7 +4171,7 @@ function jqs_home_patterns_runtime_styles() {
 				. '.jqs-management-philosophy .jqs-management-philosophy__line { margin: 1.1rem 0 1rem 0 !important; border: none !important; border-top: 1px solid #ffffff !important; background: transparent !important; opacity: 1 !important; width: 100% !important; max-width: none !important; } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__desc { margin: 0 !important; color: #eaf7f9 !important; line-height: 1.55 !important; font-size: 16px !important; } '
 				. '@media (max-width: 781px) { .jqs-management-philosophy .jqs-management-philosophy__card { min-height: 0 !important; padding-top: 3.6rem !important; } .jqs-management-philosophy .jqs-management-philosophy__number { width: 80px !important; height: 80px !important; top: -40px !important; font-size: 1.9rem !important; } } '
-				. '.jqs-company-profile { padding-top: 0 !important; padding-bottom: 0 !important; } '
+				. '.jqs-company-profile { padding-top: var(--wp--preset--spacing--50) !important; padding-bottom: var(--wp--preset--spacing--50) !important; } '
 				. '.jqs-company-profile .jqs-company-profile__subtitle { margin: 0.1rem 0 0 0 !important; color: #22326e !important; font-size: 1.02rem !important; line-height: 1.15 !important; letter-spacing: 0.01em !important; } '
 				. '.jqs-company-profile .jqs-company-profile__top { align-items: stretch !important; } '
 				. '.jqs-company-profile .jqs-company-profile__info { width: 100% !important; } '
