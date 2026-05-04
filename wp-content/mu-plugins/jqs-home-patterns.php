@@ -382,7 +382,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:1rem;padding-bottom:0;padding-left:1rem">
 <!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#3b58b7">3つの“お届け”サービス</h2>
 <!-- /wp:heading -->
@@ -492,7 +492,7 @@ function jqs_register_home_patterns() {
 <!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group alignfull has-white-background-color has-background">
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:1rem;padding-bottom:0;padding-left:1rem">
 <!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#3b58b7">3つの“お届け”サービス</h2>
 <!-- /wp:heading -->
@@ -571,7 +571,7 @@ function jqs_register_home_patterns() {
 <!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group alignfull has-white-background-color has-background">
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:1rem;padding-bottom:0;padding-left:1rem">
 <!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#3b58b7">サービス</h2>
 <!-- /wp:heading -->
@@ -2135,7 +2135,7 @@ function jqs_register_home_patterns() {
 
 	$about_us_banner_pattern_content = '
 <!-- wp:group {"align":"full","style":{"color":{"background":"#f1f1f1"},"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"className":"jqs-about-us-banner","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group alignfull jqs-about-us-banner has-background" style="background-color:#f1f1f1;padding-top:2rem;padding-bottom:2rem">
+<div class="wp-block-group alignfull jqs-about-us-banner has-background" style="background-color:#f1f1f1;padding-top:0;padding-bottom:0">
 <!-- wp:image {"sizeSlug":"full","linkDestination":"custom","href":"' . $about_us_link . '","className":"jqs-about-us-banner-image"} -->
 <figure class="wp-block-image size-full jqs-about-us-banner-image"><a href="' . $about_us_link . '"><img src="' . $about_us_pic . '" alt="" /></a></figure>
 <!-- /wp:image -->
@@ -2660,7 +2660,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"1.4rem","right":"1.4rem","bottom":"1.4rem","left":"1.4rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:1.4rem;padding-right:1.4rem;padding-bottom:1.4rem;padding-left:1.4rem">
+<div class="wp-block-group" style="padding-top:0;padding-right:1.4rem;padding-bottom:0;padding-left:1.4rem">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"}}} -->
 <p style="font-size:14px">1. 個人情報は、適切、厳重に管理し、お客様の個人情報への不正アクセスや紛失、破壊、改ざん、漏えい等が起きないように安全対策を実施しております。</p>
 <!-- /wp:paragraph -->
@@ -2716,7 +2716,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"border":{"color":"#bdbdbd","width":"1px"},"spacing":{"padding":{"top":"1.4rem","right":"1.4rem","bottom":"1.4rem","left":"1.4rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-color:#bdbdbd;border-width:1px;padding-top:1.4rem;padding-right:1.4rem;padding-bottom:1.4rem;padding-left:1.4rem">
+<div class="wp-block-group" style="border-color:#bdbdbd;border-width:1px;padding-top:0;padding-right:1.4rem;padding-bottom:0;padding-left:1.4rem">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"14pt"}}} -->
 <p style="font-size:14pt">1. 個人情報は、適切、厳重に管理し、お客様の個人情報への不正アクセスや紛失、破壊、改ざん、漏えい等が起きないように安全対策を実施しております。</p>
 <!-- /wp:paragraph -->
