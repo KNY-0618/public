@@ -45,12 +45,27 @@ function jqs_enqueue_noto_sans_jp() {
 		'[data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .has-background, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .wp-block-group, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] [style*="background"] { background: transparent !important; }'
 	);
 
-	// Header tweak: middle row horizontal padding + collapse top/bottom rows only when unused.
-		wp_add_inline_style(
-			'jqs-noto-sans-jp-global',
-			'.ct-header [data-id="menu"] > ul > li > a { --theme-line-height: 1.3 !important; } .ct-header [data-row*="middle"] > div { padding-left: 4vw !important; padding-right: 4vw !important; } .ct-header [data-row*="top"][data-column-set="0"], .ct-header [data-row*="bottom"][data-column-set="0"] { --height: 0 !important; min-height: 0 !important; margin: 0 !important; border: 0 !important; } .ct-header [data-row*="top"][data-column-set="0"] > div, .ct-header [data-row*="bottom"][data-column-set="0"] > div { min-height: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }'
-		);
-	}
+	// Header tweak was disabled to avoid interfering with Blocksy Header Builder UI.
+	wp_add_inline_style(
+		'jqs-noto-sans-jp-global',
+		'@media (min-width: 1000px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; } }'
+	);
+
+	// Global: disable dark cover overlay when placing text on banner images.
+	wp_add_inline_style(
+		'jqs-noto-sans-jp-global',
+		'.wp-block-cover .wp-block-cover__background { opacity: 0 !important; background: transparent !important; }'
+	);
+
+	// Header logo: treat sticky logo as "second logo" and keep it visible at far left.
+	wp_add_inline_style(
+		'jqs-noto-sans-jp-global',
+		'.ct-header [data-id="logo"] .site-logo-container { display: inline-flex !important; align-items: center !important; gap: 10px !important; }'
+		. '.ct-header [data-id="logo"] .site-logo-container img.default-logo { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; inset: auto !important; transform: none !important; }'
+		. '.ct-header [data-sticky*="yes"] [data-id="logo"] .site-logo-container img.default-logo { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; inset: auto !important; transform: none !important; }'
+		. '.ct-header [data-id="logo"] .site-logo-container img.sticky-logo { display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; inset: auto !important; transform: none !important; order: -1 !important; }'
+	);
+}
 add_action('wp_enqueue_scripts', 'jqs_enqueue_noto_sans_jp', 20);
 
 /**
@@ -68,7 +83,7 @@ function jqs_enqueue_noto_sans_jp_editor() {
 	wp_enqueue_style('jqs-noto-sans-jp-editor');
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-editor',
-		':root { --wp--preset--font-family--system-font: "Noto Sans JP", sans-serif; } .editor-styles-wrapper, .editor-styles-wrapper * { font-family: "Noto Sans JP", sans-serif !important; }'
+		':root { --wp--preset--font-family--system-font: "Noto Sans JP", sans-serif; } .editor-styles-wrapper, .editor-styles-wrapper * { font-family: "Noto Sans JP", sans-serif !important; } .editor-styles-wrapper .wp-block-cover .wp-block-cover__background { opacity: 0 !important; background: transparent !important; }'
 	);
 }
 add_action('enqueue_block_editor_assets', 'jqs_enqueue_noto_sans_jp_editor');
