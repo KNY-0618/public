@@ -4220,7 +4220,6 @@ function jqs_home_patterns_runtime_styles() {
 					. '.jqs-extra-footer-links__item { flex: 0 1 270px !important; max-width: 270px !important; width: 100% !important; display: flex !important; align-items: center !important; justify-content: center !important; } '
 					. '.jqs-extra-footer-links__item img { height: 50px !important; width: auto !important; max-width: 100% !important; object-fit: contain !important; display: block !important; } '
 					. '@media (max-width: 767px) { .jqs-extra-footer-links__inner { gap: 0.8rem !important; padding: 0 0.5rem !important; } .jqs-extra-footer-links__item { flex: 0 1 calc((100% - 0.8rem) / 2) !important; max-width: 220px !important; } }'
-					. '.entry-content [style*="#ff99cc"], .entry-content [style*="#ff76ba"], .site-main [style*="#ff99cc"], .site-main [style*="#ff76ba"] { color: #ff87c3 !important; } '
 					. '.entry-content [style*="background-color:#ff99cc"], .entry-content [style*="background-color: #ff99cc"], .entry-content [style*="background-color:#ff76ba"], .entry-content [style*="background-color: #ff76ba"], .site-main [style*="background-color:#ff99cc"], .site-main [style*="background-color: #ff99cc"], .site-main [style*="background-color:#ff76ba"], .site-main [style*="background-color: #ff76ba"] { background-color: #ff87c3 !important; } ';
 
 	// Frontend fallback for editor font-size presets (jqs-8 ... jqs-64).
