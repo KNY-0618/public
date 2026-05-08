@@ -489,8 +489,8 @@ function jqs_register_home_patterns() {
 	);
 
 	$delivery_title_pattern_content = '
-<!-- wp:group {"align":"full","backgroundColor":"white","layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-group alignfull has-white-background-color has-background">
+<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-service-overview","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull jqs-service-overview has-white-background-color has-background">
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:1rem;padding-bottom:0;padding-left:1rem">
 <!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
