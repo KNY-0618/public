@@ -2174,8 +2174,8 @@ function jqs_register_home_patterns() {
 	);
 
 	$company_overview_banner_pattern_content = '
-<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+<!-- wp:group {"align":"full","backgroundColor":"white","className":"jqs-company-overview-banner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull jqs-company-overview-banner has-white-background-color has-background">
 <!-- wp:cover {"url":"' . $about_bg_pic . '","id":0,"dimRatio":0,"minHeight":210,"minHeightUnit":"px","className":"jqs-company-overview-banner__cover","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-cover jqs-company-overview-banner__cover" style="margin-top:0;margin-bottom:0;min-height:210px"><img class="wp-block-cover__image-background" alt="" src="' . $about_bg_pic . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -4086,8 +4086,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-recruitment-links .jqs-recruitment-card { position: relative !important; transition: opacity 0.2s ease !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card:hover { opacity: 0.7 !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card-link-overlay { position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; z-index: 10 !important; display: block !important; text-indent: -9999px !important; overflow: hidden !important; } '
-		. '.jqs-independent-startup { text-align: inherit !important; width: min(1100px, 100%) !important; max-width: 1100px !important; margin-left: auto !important; margin-right: auto !important; padding-top: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; padding-left: 0 !important; box-sizing: border-box !important; } '
-		. '.jqs-independent-startup .wp-block-group__inner-container { padding-left: 0 !important; padding-right: 0 !important; } '
+		. '.jqs-independent-startup { text-align: inherit !important; width: min(1100px, 100%) !important; max-width: 1100px !important; margin-left: auto !important; margin-right: auto !important; box-sizing: border-box !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__banner { margin-top: 0 !important; margin-right: auto !important; margin-bottom: 0 !important; margin-left: auto !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__banner img { width: 100% !important; height: auto !important; display: block !important; } '
 		. '.jqs-independent-startup .jqs-independent-startup__section-title { width: 100% !important; margin: 0 auto 0.8rem auto !important; margin-left: auto !important; margin-right: auto !important; padding: 0.8rem 1rem !important; background-color: #3b58b7 !important; color: #ffffff !important; text-align: center !important; box-sizing: border-box !important; } '
@@ -4191,7 +4190,6 @@ function jqs_home_patterns_runtime_styles() {
 				. '.jqs-management-philosophy .jqs-management-philosophy__line { margin: 1.1rem 0 1rem 0 !important; border: none !important; border-top: 1px solid #ffffff !important; background: transparent !important; opacity: 1 !important; width: 100% !important; max-width: none !important; } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__desc { margin: 0 !important; color: #eaf7f9 !important; line-height: 1.55 !important; font-size: 16px !important; } '
 				. '@media (max-width: 781px) { .jqs-management-philosophy .jqs-management-philosophy__card { min-height: 0 !important; padding-top: 3.6rem !important; } .jqs-management-philosophy .jqs-management-philosophy__number { width: 80px !important; height: 80px !important; top: -40px !important; font-size: 1.9rem !important; } } '
-				. '.jqs-company-overview-banner { padding-top: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; padding-left: 0 !important; } '
 				. '.jqs-company-profile { padding-top: 2rem !important; padding-bottom: 2rem !important; } '
 				. '.jqs-company-profile .jqs-company-profile__subtitle { margin: 0.1rem 0 0 0 !important; color: #22326e !important; font-size: 1.02rem !important; line-height: 1.15 !important; letter-spacing: 0.01em !important; } '
 				. '.jqs-company-profile .jqs-company-profile__top { align-items: stretch !important; } '
