@@ -382,7 +382,7 @@ function jqs_register_home_patterns() {
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"border":{"color":"#3b58b7","width":"4px"},"spacing":{"padding":{"top":"1rem","right":"1rem","bottom":"1rem","left":"1rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:1rem;padding-bottom:0;padding-left:1rem">
+<div class="wp-block-group has-border-color" style="border-color:#3b58b7;border-width:4px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
 <!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#3b58b7"}}} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#3b58b7">3つの“お届け”サービス</h2>
 <!-- /wp:heading -->
