@@ -4195,6 +4195,7 @@ function jqs_home_patterns_runtime_styles() {
 				. '.jqs-management-philosophy .jqs-management-philosophy__title { margin: 0 !important; color: #ffffff !important; line-height: 1.35 !important; } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__line { margin: 1.1rem 0 1rem 0 !important; border: none !important; border-top: 1px solid #ffffff !important; background: transparent !important; opacity: 1 !important; width: 100% !important; max-width: none !important; } '
 				. '.jqs-management-philosophy .jqs-management-philosophy__desc { margin: 0 !important; color: #eaf7f9 !important; line-height: 1.55 !important; font-size: 16px !important; } '
+				. '@media (max-width: 1024px) { .jqs-management-philosophy .jqs-management-philosophy__card { height: 320px !important; min-height: 320px !important; } } '
 				. '@media (max-width: 781px) { .jqs-management-philosophy .jqs-management-philosophy__card { min-height: 0 !important; padding-top: 3.6rem !important; } .jqs-management-philosophy .jqs-management-philosophy__number { width: 80px !important; height: 80px !important; top: -40px !important; font-size: 1.9rem !important; } } '
 				. '.jqs-company-profile { padding-top: 2rem !important; padding-bottom: 2rem !important; } '
 				. '.jqs-company-profile .jqs-company-profile__subtitle { margin: 0.1rem 0 0 0 !important; color: #22326e !important; font-size: 1.02rem !important; line-height: 1.15 !important; letter-spacing: 0.01em !important; } '
