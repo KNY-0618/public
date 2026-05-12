@@ -4081,6 +4081,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-news-links .jqs-news-links__list > .wp-block-columns:last-child { margin-bottom: 0 !important; } '
 		. '.jqs-news-links .jqs-news-links__list p { font-size: 16px !important; line-height: 1.25 !important; margin-top: 0 !important; margin-bottom: 0 !important; } '
 		. '.jqs-news-links .jqs-news-links__list > .wp-block-columns > .wp-block-column:first-child p { font-weight: 400 !important; } '
+		. '@media (max-width: 781px) { .jqs-news-links .jqs-news-links__list > .wp-block-columns > .wp-block-column:first-child { flex-basis: 35% !important; } } '
 		. '.jqs-recruitment-links .jqs-recruitment-card-image { max-width: 400px !important; margin-left: auto !important; margin-right: auto !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card-image img { width: 400px !important; max-width: 100% !important; height: auto !important; } '
 		. '.jqs-recruitment-links .jqs-recruitment-card-button { width: 400px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; } '
