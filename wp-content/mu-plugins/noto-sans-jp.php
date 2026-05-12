@@ -45,18 +45,6 @@ function jqs_enqueue_noto_sans_jp() {
 		'[data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .has-background, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .wp-block-group, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] [style*="background"] { background: transparent !important; }'
 	);
 
-	// Header tweak was disabled to avoid interfering with Blocksy Header Builder UI.
-	wp_add_inline_style(
-		'jqs-noto-sans-jp-global',
-		'@media (min-width: 1000px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 100px !important; } [data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a { --theme-line-height: 1.2 !important; line-height: 1.2 !important; height: auto !important; padding-top: 0 !important; padding-bottom: 0 !important; display: inline-flex !important; align-items: center !important; } }'
-	);
-
-	// Keep header height at 100px on tablet/mobile from 781px and below.
-	wp_add_inline_style(
-		'jqs-noto-sans-jp-global',
-		'@media (max-width: 781px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 100px !important; } }'
-	);
-
 	// Global: disable dark cover overlay when placing text on banner images.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
