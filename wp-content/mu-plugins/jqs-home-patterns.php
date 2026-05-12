@@ -4071,6 +4071,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-vehicle-types .jqs-vehicle-spec-wrap .wp-block-columns:last-child { margin-bottom: 0 !important; } '
 		. '.jqs-vehicle-types .jqs-vehicle-spec-wrap p { margin-top: 0 !important; margin-bottom: 0 !important; } '
 		. '.jqs-vehicle-types .jqs-vehicle-spec-wrap .wp-block-columns > .wp-block-column:last-child p { font-size: 0.9rem !important; letter-spacing: -0.01em !important; white-space: nowrap !important; } '
+		. '@media (max-width: 767px) { .jqs-vehicle-types .jqs-vehicle-row__right > .wp-block-group { min-height: 200px !important; } .jqs-vehicle-types .jqs-vehicle-spec-wrap .wp-block-columns > .wp-block-column:last-child p { font-size: 0.65rem !important; } } '
 		. '.jqs-news-links .wp-block-column:first-child > p:empty { display: none !important; margin: 0 !important; } '
 		. '.jqs-news-links > .wp-block-columns > .wp-block-column:first-child { flex-basis: 25% !important; } '
 		. '.jqs-news-links > .wp-block-columns > .wp-block-column.jqs-news-links__list { flex-basis: 75% !important; } '
