@@ -4113,6 +4113,7 @@ function jqs_home_patterns_runtime_styles() {
 		. '.jqs-about-us-banner .jqs-about-us-banner-image { width: 100% !important; max-width: 900px !important; margin-left: auto !important; margin-right: auto !important; margin-bottom: 0 !important; } '
 		. '.jqs-about-us-banner .jqs-about-us-banner-image img { width: 100% !important; height: auto !important; display: block !important; } '
 		. '.jqs-company-overview-banner .jqs-company-overview-banner__cover { width: 1100px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; } '
+		. '@media (max-width: 767px) { .jqs-company-overview-banner .jqs-company-overview-banner__cover { min-height: 130px !important; } } '
 		. '.jqs-newgrad-job-accordion { padding-top: 0 !important; padding-bottom: 0 !important; } '
 		. '.jqs-newgrad-job-accordion > h2.wp-block-heading { margin-bottom: 0.8rem !important; } '
 		. '.jqs-newgrad-job-accordion > p { margin-bottom: 1.1rem !important; } '
