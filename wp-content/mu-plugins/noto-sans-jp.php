@@ -45,6 +45,12 @@ function jqs_enqueue_noto_sans_jp() {
 		'[data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .has-background, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] .wp-block-group, [data-footer*="type-1"] .ct-footer [data-row*="top"] [data-column*="widget-area"] [style*="background"] { background: transparent !important; }'
 	);
 
+	// Header height: PC/iPad = 100px, Smartphone = 50px.
+	wp_add_inline_style(
+		'jqs-noto-sans-jp-global',
+		'@media (min-width: 782px) { [data-header*="type-1"] { --header-height: 100px !important; --header-sticky-height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 100px !important; min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 100px !important; height: 100px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 100px !important; height: 100px !important; } } @media (max-width: 781px) { [data-header*="type-1"] { --header-height: 50px !important; --header-sticky-height: 50px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] { --height: 50px !important; min-height: 50px !important; height: 50px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] > div { min-height: 50px !important; height: 50px !important; } [data-header*="type-1"] .ct-header [data-row*="middle"] [data-column] { min-height: 50px !important; height: 50px !important; } }'
+	);
+
 	// Global: disable dark cover overlay when placing text on banner images.
 	wp_add_inline_style(
 		'jqs-noto-sans-jp-global',
